@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Animation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .train-container {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+        }
+
+        .train {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            background: url('https://thumbs.dreamstime.com/b/handsome-machinist-cartoon-uo-train-smile-waving-pict-handsome-machinist-cartoon-uo-train-smile-waving-102189491.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the following buttons to handle animation</h1>
+    <div class="train-container">
+        <div class="train" id="train"></div>
+    </div>
+    <button>Start</button>
+    <button>Stop</button>
+    <script>
+        // Buttons have no functionality for now
+    </script>
+</body>
+</html>
+

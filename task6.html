@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+        }
+        .login-box {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .login-box h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .input-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .input-box input {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 5px;
+        }
+        .input-box span {
+            margin-right: 10px;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #3897f0;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .login-btn:hover {
+            background-color: #2878c6;
+        }
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .remember-forgot label {
+            font-size: 14px;
+        }
+        .remember-forgot a {
+            font-size: 14px;
+            color: #3897f0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .remember-forgot a:hover {
+            color: #2878c6;
+        }
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+        .signup {
+            font-size: 14px;
+        }
+        .signup a {
+            color: #3897f0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .signup a:hover {
+            color: #2878c6;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Instagram</h1>
+        <div class="input-box">
+            <span>👤</span>
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-box">
+            <span>🔒</span>
+            <input type="password" placeholder="Password">
+        </div>
+        <button class="login-btn">Log In</button>
+        <div class="remember-forgot">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+        </div>
+        <hr>
+        <div class="signup">
+            Don't have an account? <a href="#">Sign up here</a>
+        </div>
+    </div>
+</body>
+</html>
