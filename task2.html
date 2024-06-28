@@ -3,16 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASK 2</title>
+    <title>Alphabetical Order Sorter</title>
+    <style>
+        body {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Sort Letters Alphabetically</h1>
+        <input type="text" id="inputString" placeholder="Enter a string">
+        <button onclick="sortString()">Sort</button>
+        <p id="result"></p>
+    </div>
     <script>
-        "use strict";
-        const sort_letters = function (letter) {
-            const str = letter.split("").sort().join("");
-            return str;
-    }
-    console.log(sort_letters("webmaster"));
+        function sortString() {
+            let input = document.getElementById("inputString").value;
+            let sortedString = input.split('').sort().join('');
+            document.getElementById("result").innerText = "Sorted String: " + sortedString;
+        }
     </script>
 </body>
 </html>
